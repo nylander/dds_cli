@@ -63,6 +63,7 @@
 ## Table of contents
 
 - [Installation](#installation)
+- [Documentation](#documentation)
 
 ## Installation
 
@@ -96,3 +97,8 @@ Go to the cloned directory and install with pip (also installs development requi
 ```bash
 pip install --upgrade -r requirements-dev.txt -e .
 ```
+
+## Documentation
+
+See [Documentation on scilifelabdatacentre.github.io/dds\_cli](https://scilifelabdatacentre.github.io/dds_cli/)
+
