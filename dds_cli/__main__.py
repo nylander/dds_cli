@@ -208,7 +208,7 @@ def dds_main(click_ctx, verbose, log_file, no_prompt, token_path):
 )
 @click.pass_obj
 def list_projects_and_contents(
-    click_ctx, project, folder, sort, json, size, tree, usage, binary, users, projects, show_all
+    click_ctx, project, folder, sort, json, size, tree, tree_path, usage, binary, users, projects, show_all
 ):
     """List the active projects you have access to or the project contents.
 
@@ -260,6 +260,7 @@ def list_projects_and_contents(
             with dds_cli.data_lister.DataLister(
                 project=project,
                 tree=tree,
+                tree_path=tree_path,
                 no_prompt=click_ctx.get("NO_PROMPT", False),
                 json=json,
                 token_path=click_ctx.get("TOKEN_PATH"),
@@ -286,6 +287,9 @@ def list_projects_and_contents(
 
                     if tree:
                         folders = lister.list_recursive(show_size=size)
+                    elif tree_path:
+                        LOG.debug("tree_path not yet implemented, exiting.")
+                        sys.exit(0)
                     else:
                         folders = lister.list_files(folder=folder, show_size=size)
 

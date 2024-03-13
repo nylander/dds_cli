@@ -47,6 +47,7 @@ class DataLister(base.DDSBaseClass):
         project: str = None,
         show_usage: bool = False,
         tree: bool = False,
+        tree_path: bool = False,
         no_prompt: bool = False,
         json: bool = False,
         token_path: str = None,
@@ -69,6 +70,7 @@ class DataLister(base.DDSBaseClass):
 
         self.show_usage = show_usage
         self.tree = tree
+        self.tree_path = tree_path
         self.json = json
         self.binary = binary
 
