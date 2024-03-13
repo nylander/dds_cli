@@ -56,6 +56,7 @@ from dds_cli.options import (
     silent_flag,
     size_flag,
     tree_flag,
+    tree_path_flag,
     usage_flag,
     users_flag,
 )
@@ -1834,9 +1835,10 @@ def get_data(
 @json_flag(help_message="Output in JSON format.")
 @size_flag(help_message="Show size of project contents.")
 @tree_flag(help_message="Display the entire project(s) directory tree.")
+@tree_path_flag(help_message="Display the entire project(s) directory content (full paths).")
 @users_flag(help_message="Display users associated with a project(Requires a project id).")
 @click.pass_context
-def list_data(ctx, project, folder, json, size, tree, users):
+def list_data(ctx, project, folder, json, size, tree, tree_path, users):
     """List project contents.
 
     Same as `dds ls --p`.
@@ -1847,6 +1849,7 @@ def list_data(ctx, project, folder, json, size, tree, users):
         folder=folder,
         size=size,
         tree=tree,
+        tree_path=tree_path,
         users=users,
         json=json,
     )
