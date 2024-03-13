@@ -1,6 +1,7 @@
 testing
 docs/build
 *.pyc
+*.swp
 __pycache__
 couchdb-data
 dportal.yaml
