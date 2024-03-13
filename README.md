@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    <b>A command line tool `dds` to manage projects and data in the SciLifeLab Data Delivery System.</b>
+    <b>A command line tool <TT>dds</TT> to manage projects and data in the SciLifeLab Data Delivery System.</b>
 </p>
 <br />
 
@@ -54,7 +54,7 @@
 
 ## About
 
-**The Data Delivery System (DDS) is a cloud-based system for all SciLifeLab platforms where data generated throughout each project can be delivered to the research groups in a fast, secure and simple way. The CLI makes requests to the API (see badge below for link) in order to use the API functionality.**
+**The Data Delivery System (DDS) is a cloud-based system for all SciLifeLab platforms where data generated throughout each project can be delivered to the research groups in a fast, secure and simple way. The CLI makes requests to the API (see badge above for link) in order to use the API functionality.**
 
 > _The Data Delivery System is developed and maintained by the SciLifeLab Data Centre. National Genomics Infrastructure (NGI) Stockholm has been a part of the development team during 2021 and early 2022._
 
@@ -63,7 +63,6 @@
 ## Table of contents
 
 - [Installation](#installation)
-- [Overview of commands](#overview-of-commands)
 
 ## Installation
 
