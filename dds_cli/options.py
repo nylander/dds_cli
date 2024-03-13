@@ -340,6 +340,22 @@ def tree_flag(help_message, long="--tree", name="tree", show_default=True):
     )
 
 
+def tree_path_flag(help_message, long="--tree-path", name="tree_path", show_default=True):
+    """
+    Tree path flag standard definition.
+
+    Use as decorator for commands.
+    """
+    return click.option(
+        long,
+        name,
+        is_flag=True,
+        default=False,
+        show_default=show_default,
+        help=help_message,
+    )
+
+
 def usage_flag(help_message, long="--usage", name="usage", show_default=True):
     """
     Usage flag standard definition.
