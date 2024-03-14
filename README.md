@@ -100,5 +100,9 @@ pip install --upgrade -r requirements-dev.txt -e .
 
 ## Documentation
 
+```bash
+dds --help
+```
+
 See [Documentation on scilifelabdatacentre.github.io/dds\_cli](https://scilifelabdatacentre.github.io/dds_cli/)
 
